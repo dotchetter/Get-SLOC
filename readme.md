@@ -26,7 +26,7 @@ The iteration is non-recursive in the directory hierarchy - meaning, that no sub
 4. Copy and paste this command in your PowerShell terminal:
 
    ```powershell
-   Expand-Archive .\SLOC-Counter-master.zip -DestinationPath "C:\Program Files\WindowsPowerShell\Modules"; mv "C:\Program Files\WindowsPowerShell\Modules\SLOC-Counter-master" "C:\Program Files\WindowsPowerShell\Modules\SLOC-Counter"
+   Expand-Archive .\Get-SLOC-master.zip -DestinationPath "C:\Program Files\WindowsPowerShell\Modules"; mv "C:\Program Files\WindowsPowerShell\Modules\Get-SLOC-master" "C:\Program Files\WindowsPowerShell\Modules\Get-SLOC"
    ```
 
 
