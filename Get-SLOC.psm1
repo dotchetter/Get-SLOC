@@ -21,30 +21,18 @@ function Get-SLOC
 
     $rows = 0
     $IgnoredExtensions = @(
-        '.txt',
-        '.dat',
-        '.rtf',
-        '.md',
-        '.env',
-        '.log',
-        '.err',
-        '.exe',
-        '.zip',
-        '.tar',
-        'tar.gz',
-        '.7z',
-        '.dll',
-        '.bin',
-        '.pdf',
-        '.ppt',
-        '.pptx',
-        '.xls',
-        '.xlsx',
-        '.git',
-        '.sln',
-        '.vcxproj',
-        '.vcxproj.user',
-        'vcxproj.filters'
+        '.txt', '.dat',
+        '.rtf', '.md',
+        '.env', '.log',
+        '.err', '.exe',
+        '.zip', '.tar',
+        'tar.gz', '.7z',
+        '.dll', '.bin',
+        '.pdf', '.ppt',
+        '.pptx', '.xls',
+        '.xlsx', '.git',
+        '.sln', '.vcxproj',
+        '.vcxproj.user', 'vcxproj.filters'
     )
 
     foreach ($file in Get-ChildItem * -Force -ErrorAction SilentlyContinue)
