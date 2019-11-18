@@ -36,14 +36,16 @@ function Get-SLOC
         '.pdf',
         '.ppt*',
         '.xls*',
-        '.git'
+        '.git',
+        '.sln',
+        '.vcxproj*'
     )
 
     foreach ($file in Get-ChildItem * -Force -ErrorAction SilentlyContinue)
     {
         if ($file.Extension -notin $IgnoredExtensions -and $file.Name -ne 'LICENSE' -and $file.GetType() -ne 'System.IO.DirectoryInfo')
         {
-            foreach ($row in Get-Content $file){
+            foreach ($row in Get-Content $file -ErrorAction SilentlyContinue){
                 if ($row.length -gt 0)
                 {
                     $rows++
