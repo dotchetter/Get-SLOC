@@ -29,16 +29,21 @@ function Get-SLOC
         '.err',
         '.exe',
         '.zip',
-        '.tar*',
+        '.tar',
+        'tar.gz',
         '.7z',
         '.dll',
         '.bin',
         '.pdf',
-        '.ppt*',
-        '.xls*',
+        '.ppt',
+        '.pptx',
+        '.xls',
+        '.xlsx',
         '.git',
         '.sln',
-        '.vcxproj*'
+        '.vcxproj',
+        '.vcxproj.user',
+        'vcxproj.filters'
     )
 
     foreach ($file in Get-ChildItem * -Force -ErrorAction SilentlyContinue)
