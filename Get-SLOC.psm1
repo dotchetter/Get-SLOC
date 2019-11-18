@@ -1,4 +1,8 @@
-<#
+
+
+function Get-SLOC
+{
+    <#
 .Synopsis
  Get the number of lines of code (comments included) in a given folder.
 
@@ -15,9 +19,6 @@
  https://github.com/dotchetter/SLOC-Counter
 #>
 
-
-function Get-SLOC
-{
     $rows = 0
     $IgnoredExtensions = @(
         '.txt',
