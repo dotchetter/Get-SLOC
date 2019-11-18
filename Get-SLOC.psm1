@@ -41,7 +41,7 @@ function Get-SLOC
 
     foreach ($file in Get-ChildItem * -Force -ErrorAction SilentlyContinue)
     {
-        if ($file.Extension -notin $IgnoredExtensions -and $file.Name -ne 'LICENSE')
+        if ($file.Extension -notin $IgnoredExtensions -and $file.Name -ne 'LICENSE' -and $file.GetType() -ne 'System.IO.DirectoryInfo')
         {
             foreach ($row in Get-Content $file){
                 if ($row.length -gt 0)
