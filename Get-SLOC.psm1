@@ -16,7 +16,7 @@ function Get-SLOC
  Get-SLOC
 
 .Link 
- https://github.com/dotchetter/SLOC-Counter
+ https://github.com/dotchetter/Get-SLOC
 #>
 
     $rows = 0
