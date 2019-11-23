@@ -1,10 +1,10 @@
-# SLOC-Counter
+# Get-SLOC
 
 #### Cmdlet designed to quickly and easily get the count of source lines of code in a given directory.
 
 ## About
 
-The SLOC-Counter module is incredibly short and sweet; run it, and get the lines of code in the current directory.
+The Get-SLOC module is incredibly short and sweet; run it, and get the lines of code in the current directory.
 Files with text or binary extensions are ignored. Empty rows are ignored.
 
 Comments and block comments are included in the counting.
